@@ -26,7 +26,14 @@ jobs:
         run: echo HI guys how are you
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo hope all are good
-          echo i will help you
+      - name: java version
+        run: java -version
+      - name: maven version
+        run: mvn --version
+      - name: python version
+        run: python --version
+      - name: docker version
+        run: docker -v
+      - name: terraform version
+        run: terraform --version
+
